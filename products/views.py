@@ -13,5 +13,5 @@ def update_products(request):
     return render(request, 'products/update-products.html')
 
 
-
-
+def shop(request):
+    return render(request, 'products/shop.html')
