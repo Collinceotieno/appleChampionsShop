@@ -5,9 +5,8 @@ from django.contrib import messages
 from products.forms import ProductForm
 from .models import Product
 
-import requests
+
 from django.http import HttpResponse
-from requests.auth import HTTPBasicAuth
 from .credentials import *
 
 
