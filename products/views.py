@@ -5,7 +5,6 @@ from django.contrib import messages
 from products.forms import ProductForm
 from .models import Product
 
-
 from django.http import HttpResponse
 from .credentials import *
 
@@ -26,8 +25,9 @@ def add_products(request):
             messages.error(request, 'Product saving failed')
             return redirect("add-products-url")
     else:
+
         form = ProductForm()
-    return render(request, 'products/add-products.html', {'form': form})
+        return render(request, 'products/add-products.html', {'form': form})
 
 
 def update_products(request, id):
